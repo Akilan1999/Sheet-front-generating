@@ -1,6 +1,7 @@
-var port = process.env.PORT || 8003;
+var port = process.env.PORT || 8004;
 
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 //Express imports
 const express = require('express');
@@ -10,6 +11,8 @@ const path = require('path');
 
 //Usage of express
 const app = express();
+
+app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'ejs');
