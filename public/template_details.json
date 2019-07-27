@@ -1,0 +1,18 @@
+{
+    "templates":[
+        {
+          "template_name" : "Colo_Shop",
+          "folder":[
+              "styles",
+              "js",
+              "plugins",
+              "images"
+          ],
+          "pages" : [
+              "index",
+              "contact",
+              "cart"
+          ]
+        }
+    ]
+}

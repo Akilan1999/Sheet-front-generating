@@ -159,6 +159,11 @@
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
+                  <input name="template" type="hidden" class="form-control" value="Colo_Shop" id="template">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
                   <textarea name="description" class="form-control" id="description" cols="30" rows="10" placeholder="Description"
                     id="description"></textarea>
                 </div>
@@ -179,6 +184,9 @@
               </div>
               <br>
               <br>
+
+              <!--Hidden input only for testing purposes-->
+              <!--<input type="text" name="template" class="form-control" value="Colo_shop">-->
 
               <div class="form-group row">
                 <div class="col-md-6">
@@ -264,8 +272,10 @@
       const bannerUrl = formData.get('bannerUrl');
       const email = formData.get('email');
       const description = formData.get('description');
+      const template = formData.get('template');
+
       const csv = sheetcsv
-      const json = {  firstName, lastName, companyName, logoUrl, bannerUrl, email, description, csv }
+      const json = {  firstName, lastName, companyName, logoUrl, bannerUrl, email, description,template, csv }
 
         fetch('/generate', {
           method:"POST",
