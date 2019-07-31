@@ -56,7 +56,7 @@ exports.generate = function (req, res) {
       for (var j = 0; j < templateContent.templates[i].pages.length; j++) {
         //Copying html files can be removed in the future stages
         fs.createReadStream('./public/templates/' + req.body.template + '/' + templateContent.templates[i].pages[j] + '.html').pipe(fs.createWriteStream(dir + '/' + templateContent.templates[i].pages[j] + '.html'));
-        ejs2html('./public/templates/' + req.body.template + '/' + templateContent.templates[i].pages[j] + '.ejs', req.body, dir, "index");
+        ejs2html('./public/templates/' + req.body.template + '/' + templateContent.templates[i].pages[j] + '.ejs', req.body, dir, templateContent.templates[i].pages[j]);
       }
 
       for (var j = 0; j < templateContent.templates[i].folder.length; j++) {
