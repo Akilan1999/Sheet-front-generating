@@ -2,6 +2,7 @@
     "templates":[
         {
           "template_name" : "Colo_Shop",
+          "image":"",
           "folder":[
               "styles",
               "js",
@@ -12,7 +13,9 @@
               "index",
               "contact",
               "cart"
-          ]
+          ],
+          "link":"http://sheetcommerce.techclub.team/pages/Hw%20Tech%20Club_3/index.html",
+          "type":"free"
         }
     ]
 }
