@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>facebook</title>
+	<title>Hw Tech Club</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Colo Shop Template">
@@ -87,7 +87,7 @@
 						<div class="col-lg-12 text-right">
 							<div class="logo_container">
 								<a href="#"><img
-										src="https://bcassetcdn.com/asset/logo/e33c12b4-1128-4129-b31f-2c31cb0878c7/logo?v=4&amp;text=Logo+Text+Here"
+										src="https://hwtech.club/images/output-onlinepngtools.png"
 										class="img-fluid" style="height:5rem;" /></a>
 							</div>
 							<nav class="navbar">
@@ -129,7 +129,7 @@
 		<!-- Slider -->
 
 		<div class="main_slider"
-			style="background-image:url('https://i.pinimg.com/originals/fa/45/96/fa4596ad9a9d39901eeb455ed4f74e44.jpg')">
+			style="background-image:url('https://www.bsr.org/images/heroes/tech-against-trafficking-hero.jpg')">
 			<div class="container fill_height">
 				<div class="row align-items-center fill_height">
 
@@ -171,57 +171,15 @@
 							<div class="product-item women">
 								<div class="product product_filter">
 									<div class="product_image">
-										<img src="https://cdn.sparkfun.com//assets/parts/1/2/8/2/8/14643-Raspberry_Pi_3_B_-02.jpg" alt="">
+										<img src="https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png" alt="">
 									</div>
 									<div class="favorite"></div>
 									<div class="product_info">
 										<h6 class="product_name"><a href="#"><a>Raspberry Pi</a></h6>
-										<div class="product_price">$120</div>
+										<div class="product_price">$400</div>
 									</div>
 								</div>
-								<div class="red_button add_to_cart_button"><a onClick="additem('Raspberry Pi', 120)" style="color:white">Add to cart</a></div>
-							</div>
-							
-							<div class="product-item women">
-								<div class="product product_filter">
-									<div class="product_image">
-										<img src="https://www.arduino.cc/en/uploads/Products/Uno.jpg" alt="">
-									</div>
-									<div class="favorite"></div>
-									<div class="product_info">
-										<h6 class="product_name"><a href="#"><a>Arduino</a></h6>
-										<div class="product_price">$130</div>
-									</div>
-								</div>
-								<div class="red_button add_to_cart_button"><a onClick="additem('Arduino', 130)" style="color:white">Add to cart</a></div>
-							</div>
-							
-							<div class="product-item women">
-								<div class="product product_filter">
-									<div class="product_image">
-										<img src="https://siliconangle.com/wp-content/blogs.dir/1/files/2018/01/AR-hyper-vuzix-blade.png" alt="">
-									</div>
-									<div class="favorite"></div>
-									<div class="product_info">
-										<h6 class="product_name"><a href="#"><a>AR glasses</a></h6>
-										<div class="product_price">$1500</div>
-									</div>
-								</div>
-								<div class="red_button add_to_cart_button"><a onClick="additem('AR glasses', 1500)" style="color:white">Add to cart</a></div>
-							</div>
-							
-							<div class="product-item women">
-								<div class="product product_filter">
-									<div class="product_image">
-										<img src="https://www.objectproducts.co.uk/wp-content/uploads/2017/01/SP093-VR-Glasses.jpg" alt="">
-									</div>
-									<div class="favorite"></div>
-									<div class="product_info">
-										<h6 class="product_name"><a href="#"><a>VR glasses</a></h6>
-										<div class="product_price">$900</div>
-									</div>
-								</div>
-								<div class="red_button add_to_cart_button"><a onClick="additem('VR glasses', 900)" style="color:white">Add to cart</a></div>
+								<div class="red_button add_to_cart_button"><a onClick="additem('Raspberry Pi', 400)" style="color:white">Add to cart</a></div>
 							</div>
 							
 
@@ -262,13 +220,13 @@
 	<script>
 		$(document).ready(function () {
 
-			if (localStorage.getItem('facebook') === null) {
+			if (localStorage.getItem('Hw Tech Club_4') === null) {
 				console.log("here");
 				var arr = new Array();
-				localStorage.setItem('facebook', JSON.stringify(arr));
+				localStorage.setItem('Hw Tech Club_4', JSON.stringify(arr));
 			}
 
-			var arr_json = JSON.parse(localStorage.getItem('facebook'));
+			var arr_json = JSON.parse(localStorage.getItem('Hw Tech Club_4'));
 
 			$("#checkout_items").html(arr_json.length);
 			console.log(arr_json.length);
@@ -277,11 +235,11 @@
 
 		function additem(name, price) {
 			var data = { 'name': name, 'price': price };
-			var arr_json = JSON.parse(localStorage.getItem('facebook'));
+			var arr_json = JSON.parse(localStorage.getItem('Hw Tech Club_4'));
 			console.log(typeof (arr_json));
 			arr_json.push(data);
-			localStorage.setItem('facebook', JSON.stringify(arr_json));
-			console.log(JSON.parse(localStorage.getItem('facebook')));
+			localStorage.setItem('Hw Tech Club_4', JSON.stringify(arr_json));
+			console.log(JSON.parse(localStorage.getItem('Hw Tech Club_4')));
 			$('#checkout_items').html(arr_json.length);
 		}
 	</script>
